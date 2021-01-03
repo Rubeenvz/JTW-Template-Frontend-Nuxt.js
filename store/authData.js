@@ -28,6 +28,7 @@ export const actions = {
       commit('setToken', res.data.token)
       this.$router.push({ path: '/example' })
     } catch (e) {
+      // eslint-disable-next-line
       console.log(e.response.data.message)
     }
   },
